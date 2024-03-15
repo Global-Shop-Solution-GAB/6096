@@ -1,0 +1,661 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.f_Main..Create(BaseForm)
+Gui.f_Main..Caption("Expanded User Fields")
+Gui.f_Main..Size(452,505)
+Gui.f_Main..MinX(0)
+Gui.f_Main..MinY(0)
+Gui.f_Main..Position(0,0)
+Gui.f_Main..AlwaysOnTop(False)
+Gui.f_Main..FontName("Tahoma")
+Gui.f_Main..FontSize(8.25)
+Gui.f_Main..ControlBox(True)
+Gui.f_Main..MaxButton(False)
+Gui.f_Main..MinButton(True)
+Gui.f_Main..MousePointer(0)
+Gui.f_Main..Moveable(True)
+Gui.f_Main..Sizeable(False)
+Gui.f_Main..ShowInTaskBar(True)
+Gui.f_Main..TitleBar(True)
+Gui.f_Main..Event(UnLoad,f_Main_Unload)
+Gui.f_Main.lblUserFld1.Create(Label,"Label",True,25,13,0,9,50,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld1.BorderStyle(0)
+Gui.f_Main.lblUserFld2.Create(Label,"Label",True,25,13,0,9,90,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld2.BorderStyle(0)
+Gui.f_Main.lblUserFld3.Create(Label,"Label",True,25,13,0,9,130,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld3.BorderStyle(0)
+Gui.f_Main.lblUserFld4.Create(Label,"Label",True,25,13,0,9,170,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld4.BorderStyle(0)
+Gui.f_Main.lblUserFld5.Create(Label,"Label",True,25,13,0,9,210,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld5.BorderStyle(0)
+Gui.f_Main.lblUserFld6.Create(Label,"Label",True,25,13,0,9,250,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld6.BorderStyle(0)
+Gui.f_Main.lblUserFld7.Create(Label,"Label",True,25,13,0,9,290,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld7.BorderStyle(0)
+Gui.f_Main.lblUserFld8.Create(Label,"Label",True,25,13,0,9,330,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld8.BorderStyle(0)
+Gui.f_Main.lblUserFld9.Create(Label,"Label",True,25,13,0,9,370,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld9.BorderStyle(0)
+Gui.f_Main.lblUserFld10.Create(Label,"Label",True,25,13,0,9,410,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblUserFld10.BorderStyle(0)
+Gui.f_Main.txtUserFld1.Create(TextBox,"",True,345,20,0,93,46,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld1.MaxLength(30)
+Gui.f_Main.txtUserFld2.Create(TextBox,"",True,345,20,0,93,86,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld2.MaxLength(30)
+Gui.f_Main.txtUserFld3.Create(TextBox,"",True,345,20,0,93,126,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld3.MaxLength(30)
+Gui.f_Main.txtUserFld4.Create(TextBox,"",True,345,20,0,93,166,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld4.MaxLength(30)
+Gui.f_Main.txtUserFld5.Create(TextBox,"",True,345,20,0,93,206,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld5.MaxLength(30)
+Gui.f_Main.txtUserFld6.Create(TextBox,"",True,345,20,0,93,246,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld6.MaxLength(70)
+Gui.f_Main.txtUserFld7.Create(TextBox,"",True,345,20,0,93,286,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld7.MaxLength(70)
+Gui.f_Main.txtUserFld8.Create(TextBox,"",True,345,20,0,93,326,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld8.MaxLength(70)
+Gui.f_Main.txtUserFld9.Create(TextBox,"",True,345,20,0,93,366,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld9.MaxLength(70)
+Gui.f_Main.txtUserFld10.Create(TextBox,"",True,345,20,0,93,406,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtUserFld10.MaxLength(70)
+Gui.f_Main.cmdSave.Create(Button)
+Gui.f_Main.cmdSave.Enabled(True)
+Gui.f_Main.cmdSave.Visible(True)
+Gui.f_Main.cmdSave.Zorder(0)
+Gui.f_Main.cmdSave.Size(64,20)
+Gui.f_Main.cmdSave.Position(373,440)
+Gui.f_Main.cmdSave.Caption("Save")
+Gui.f_Main.cmdSave.FontName("Tahoma")
+Gui.f_Main.cmdSave.FontSize(8.25)
+Gui.f_Main.cmdSave.Event(Click,cmdSave_Click)
+Gui.f_Main.cmdSave.Anchor(10)
+Gui.f_Main.cmdCancel.Create(Button)
+Gui.f_Main.cmdCancel.Enabled(True)
+Gui.f_Main.cmdCancel.Visible(True)
+Gui.f_Main.cmdCancel.Zorder(0)
+Gui.f_Main.cmdCancel.Size(64,20)
+Gui.f_Main.cmdCancel.Position(294,440)
+Gui.f_Main.cmdCancel.Caption("Cancel")
+Gui.f_Main.cmdCancel.FontName("Tahoma")
+Gui.f_Main.cmdCancel.FontSize(8.25)
+Gui.f_Main.cmdCancel.Event(Click,cmdCancel_Click)
+Gui.f_Main.cmdCancel.Anchor(10)
+Gui.f_Main.lblSalesOrder.Create(Label,"Order:",True,32,13,0,9,12,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblSalesOrder.BorderStyle(0)
+Gui.f_Main.txtSalesOrder.Create(TextBox,"",True,64,20,0,45,8,False,0,"Tahoma",8.25,,1)
+Gui.f_Main.lblOrderLine.Create(Label,"Line:",True,23,13,0,115,12,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblOrderLine.BorderStyle(0)
+Gui.f_Main.txtOrderLine.Create(TextBox,"",True,44,20,0,144,8,False,0,"Tahoma",8.25,,1)
+Gui.f_Main.cmdSettings.Create(Button)
+Gui.f_Main.cmdSettings.Enabled(False)
+Gui.f_Main.cmdSettings.Visible(True)
+Gui.f_Main.cmdSettings.Zorder(0)
+Gui.f_Main.cmdSettings.Size(64,20)
+Gui.f_Main.cmdSettings.Position(9,440)
+Gui.f_Main.cmdSettings.Caption("Settings")
+Gui.f_Main.cmdSettings.FontName("Tahoma")
+Gui.f_Main.cmdSettings.FontSize(8.25)
+Gui.f_Main.cmdSettings.ToolTip("You must be logged in as 'Supervsr' to access this button.")
+Gui.f_Main.cmdSettings.Anchor(6)
+Gui.f_Main.lblPart.Create(Label,"Part:",True,24,13,0,194,12,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblPart.BorderStyle(0)
+Gui.f_Main.txtPart.Create(TextBox,"",True,143,20,0,222,8,False,0,"Tahoma",8.25,,1)
+Gui.f_Main.lblLoc.Create(Label,"Loc:",True,20,13,0,372,12,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblLoc.BorderStyle(0)
+Gui.f_Main.txtLoc.Create(TextBox,"",True,41,20,0,396,8,False,0,"Tahoma",8.25,,1)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.bError.Declare(Boolean)
+V.Global.bUnattended.Declare(Boolean)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+'Flow Down User Fields
+'Written for TE Connectivity Inc.
+'Written by Ashley Collins
+'September 17, 2020
+'Ten extra User fields for Sales Order Lines Screen
+Function.Intrinsic.UI.UsePixels ' Allows you to use Pixels instead of Twips throughout
+
+'open database connection
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN, V.Ambient.PUser, V.Ambient.PPass)
+
+'check to see which hook is firing
+F.Intrinsic.Control.If(V.Caller.Hook,=,12010)
+	V.Passed.000141.Set("Expanded UFs")
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,12420)
+	'call the sub to load the user field names that are set up in the maintenance screen
+	'F.Intrinsic.Control.If(V.Caller.User,=,"SUPERVSR")
+	'	Gui.f_Main.cmdSettings.Enabled(True)
+	'F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.CallSub(LoadScreenData)
+	F.Intrinsic.Control.CallSub(LoadLabels)
+	'check to see if the user fields are already populated for this order
+	F.Intrinsic.Control.CallSub(LoadUserFields)
+	Gui.f_Main..Show
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,13530)
+'if the script is running from the MRP Populate Hook, check wo user fields and highlight grid
+	V.Passed.777777.Set(1)
+	F.Intrinsic.Control.CallSub(WOUserFldCheck)
+F.Intrinsic.Control.Else
+	'running from the unattended task 
+	'call sub to copy the data from the sales order to the wo header
+	F.Intrinsic.Control.CallSub(CopyExpFields)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.LoadScreenData.Start
+F.Intrinsic.Control.Try
+V.Local.sLoc.Declare(String)
+V.Local.sOrderNo.Declare(String)
+V.Local.sOrderLine.Declare(String)
+V.Local.sPart.Declare(String)
+V.Local.sPartRev.Declare(String)
+V.Local.sRev.Declare(String)
+
+V.Local.sOrderNo.Set(V.Passed.000060)
+F.Intrinsic.String.LPad(V.Local.sOrderNo, "0", 7, V.Local.sOrderNo)
+V.Local.sOrderLine.Set(V.Passed.000051)
+F.Intrinsic.String.Lpad(V.Local.sOrderLine, "0", 3, V.Local.sOrderLine)
+
+V.Local.sPart.Set(V.Passed.000052)
+F.Intrinsic.String.RPad(V.Local.sPart," ", 17, V.Local.sPart)
+V.Local.sRev.Set(V.Passed.000053)
+F.Intrinsic.String.RPad(v.Local.sRev, " ",3, V.Local.sRev)
+F.Intrinsic.String.Build("{0}{1}", V.Local.sPart.Trim, V.Local.sRev.Trim, V.Local.sPartRev)
+
+V.Local.sLoc.Set(V.Passed.000054)
+
+Gui.f_Main.txtSalesOrder.Text(V.Local.sOrderNo.Trim)
+Gui.f_Main.txtOrderLine.Text(V.Local.sOrderLine.Trim)
+Gui.f_Main.txtPart.Text(V.Local.sPartRev.Trim)
+Gui.f_Main.txtLoc.Text(v.Local.sLoc.Trim)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadScreenData.End
+
+Program.Sub.LoadLabels.Start
+F.Intrinsic.Control.Try
+V.Local.iCnt.Declare(Long)
+V.Local.iLblCnt.Declare(Long)
+V.Local.sCaption.Declare(String)
+V.Local.sFieldName.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sLbl.Declare(String)
+
+V.Local.sSQL.Set("SELECT USER_FIELD,UF_CAPTIONS FROM GCG_6096_EXPUF_CAPT ORDER BY UF_ID")
+F.Intrinsic.Control.If(V.DataTable.dtFieldNames.Exists)
+	F.Data.DataTable.Close("dtFieldNames")
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.CreateFromSQL("dtFieldNames", "con", V.Local.sSQL, True)
+
+F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtFieldNames.RowCount--,1)
+	F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iLblCnt)
+	
+	V.Local.sCaption.Set(V.DataTable.dtFieldNames(V.Local.iCnt).UF_CAPTIONS!FieldValTrim)
+	V.Local.sFieldName.Set(V.DataTable.dtFieldNames(V.Local.iCnt).USER_FIELD!FieldValTrim)
+	F.Intrinsic.Control.SelectCase(V.Local.iLblCnt)
+		F.Intrinsic.Control.Case(1)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld1.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld1.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(2)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld2.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld2.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(3)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld3.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld3.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(4)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld4.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld4.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(5)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld5.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld5.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(6)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld6.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld6.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(7)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld7.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld7.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(8)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld8.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld8.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(9)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld9.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld9.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(10)
+			F.Intrinsic.Control.If(V.Local.sCaption,<>,"")
+				Gui.f_Main.lblUserFld10.Caption(V.Local.sCaption.Trim)
+			F.Intrinsic.Control.Else
+				Gui.f_Main.lblUserFld10.Caption(V.Local.sFieldName.Trim)
+			F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndSelect
+		
+		
+F.Intrinsic.Control.Next(V.Local.iCnt)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadLabels.End
+
+Program.Sub.LoadUserFields.Start
+F.Intrinsic.Control.Try
+V.Local.iCnt.Declare(Long)
+V.Local.iLblCnt.Declare(Long)
+V.Local.sData.Declare(String)
+V.Local.sOrdeLine.Declare(String)
+V.Local.sOrderNo.Declare(String)
+V.Local.sPart.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sSQL.Declare(String)
+
+V.Local.sOrderNo.Set(V.Screen.f_Main!txtSalesOrder.Text)
+V.Local.sOrdeLine.Set(V.Screen.f_Main!txtOrderLine.Text)
+F.Intrinsic.String.RPad(V.Local.sOrdeLine,"0", 4, V.Local.sOrdeLine)
+
+F.Intrinsic.String.Build("SELECT UF_DATA FROM GCG_6096_EXPUF_DATA WHERE ORDER_NO = '{0}' AND ORDER_LINE = '{1}' ORDER BY UF_ID", V.Local.sOrderNo.Trim, V.Local.sOrdeLine.Trim, V.Local.sSQL)
+F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+	F.Intrinsic.String.Split(V.Local.sRet,"#$#", V.Local.sRet)
+	F.Intrinsic.Control.For(V.Local.iCnt,V.Local.sRet.LBound, V.Local.sRet.UBound,1)
+		F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iLblCnt)
+		V.Local.sData.Set(V.Local.sRet(V.Local.iCnt))
+		.Intrinsic.Control.SelectCase(V.Local.iLblCnt)
+		F.Intrinsic.Control.Case(1)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld1.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(2)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld2.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(3)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld3.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(4)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld4.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(5)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld5.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(6)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld6.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(7)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld7.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(8)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld8.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(9)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld9.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(10)
+			F.Intrinsic.Control.If(V.Local.sData,<>,"")
+				Gui.f_Main.txtUserFld10.Text(V.Local.sData.Trim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndSelect
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadUserFields.End
+
+Program.Sub.cmdSave_Click.Start
+F.Intrinsic.Control.Try
+V.Local.sData.Declare(String)
+V.Local.sLoc.Declare(String)
+V.Local.sOrderNo.Declare(String)
+V.Local.sOrderLine.Declare(String)
+V.Local.sPart.Declare(String)
+
+
+V.Local.sOrderNo.Set(V.Screen.f_Main!txtSalesOrder.Text)
+V.Local.sOrderLine.Set(V.Screen.f_Main!txtOrderLine.Text)
+F.Intrinsic.String.RPad(V.Local.sOrderLine, "0", 4, V.Local.sOrderLine)
+V.Local.sPart.Set(V.Screen.f_Main!txtPart.Text)
+V.Local.sLoc.Set(v.Screen.f_Main!txtLoc.Text)
+F.Intrinsic.Control.If(V.DataTable.dtUFSave.Exists)
+	F.Data.DataTable.Close("dtUFSave")
+F.Intrinsic.Control.EndIf
+
+F.Data.DataTable.Create("dtUFSave", True)
+F.Data.DataTable.AddColumn("dtUFSave","UF_ID", "LONG")
+F.Data.DataTable.AddColumn("dtUFSave","UF_DATA", "STRING")
+F.Data.DataTable.AddColumn("dtUFSave", "ORDER_NO", "STRING"	)
+F.Data.DataTable.AddColumn("dtUFSave", "ORDER_LINE", "STRING")
+F.Data.DataTable.AddColumn("dtUFSave", "PART", "STRING")
+F.Data.DataTable.AddColumn("dtUFSave", "LOC", "STRING")
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld1.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 1, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld2.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 2, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld3.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 3, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld4.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 4, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld5.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 5, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld6.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 6, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld7.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 7, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld8.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 8, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld9.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 9, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+V.Local.sData.Set(V.Screen.f_Main!txtUserFld10.Text)
+F.Data.DataTable.AddRow("dtUFSave", "UF_ID", 10, "UF_DATA", V.Local.sData.Trim, "ORDER_NO", V.Local.sOrderNo.Trim, "ORDER_LINE",V.Local.sOrderLine.Trim, "PART",V.Local.sPart.Trim, "LOC",V.Local.sLoc.Trim)
+
+F.Data.DataTable.SaveToDB("dtUFSave", "con", "GCG_6096_EXPUF_DATA", "UF_ID*!*ORDER_NO*!*ORDER_LINE",256)
+
+F.Intrinsic.UI.Msgbox("Expanded User Fields Saved!")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.cmdCancel_Click.Start
+F.Intrinsic.Control.Try
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.UI.Msgbox("Are you sure you want to cancel? Changes will not be saved.", "Warning", 4, V.Local.iRet)
+
+F.Intrinsic.Control.If(V.Local.iRet,=,6)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(f_Main_Unload)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdCancel_Click.End
+
+Program.Sub.WOUserFldCheck.Start
+F.Intrinsic.Control.Try
+V.Local.iColumns.Declare(Long)
+V.Local.iCnt.Declare(Long)
+V.Local.iRowCnt.Declare(Long)
+V.Local.sBalance.Declare(String)
+V.Local.sCustVend.Declare(String)
+V.Local.sDataTypes.Declare(String)
+V.Local.sDueDate.Declare(String)
+V.Local.sJob.Declare(String)
+V.Local.sJobSuff.Declare(String)
+V.Local.sQuantity.Declare(String)
+V.Local.sReadRow.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sSuffix.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sTemp.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.sType.Declare(String)
+V.Local.sColor.Declare(String)
+
+'Load the BDF
+F.Intrinsic.BDF.Load("AUX001", "AUX001")
+'Clone the BDF for changes
+F.Intrinsic.BDF.Clone("AUX001", "Clone")
+'pull in the titles for the BDF
+'F.Intrinsic.BDF.ReadColumnTitle("AUX001", V.Local.sTitles)
+
+'F.Intrinsic.BDF.ReadColumnCount("AUX001", V.Local.iColumns)
+'F.Intrinsic.Math.Sub(V.Local.iColumns,1, V.Local.iColumns)
+'F.Intrinsic.Control.For(V.Local.iCnt,0, V.Local.iColumns,1)
+'	F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+'		V.Local.sDataTypes.Set("String")
+'	F.Intrinsic.Control.Else		
+'		F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sDataTypes,"String",V.Local.sDataTypes)
+'	F.Intrinsic.Control.EndIf
+'F.Intrinsic.Control.Next(V.Local.iCnt)
+Function.Intrinsic.Debug.InvokeDebugger
+Function.Intrinsic.Debug.Stop
+
+'build string data
+F.Intrinsic.BDF.ReadRowCount("AUX001", V.Local.iRowCnt)
+F.Intrinsic.Math.Sub(V.Local.iRowCnt,1,V.Local.iRowCnt)
+F.Intrinsic.Control.For(V.Local.iCnt,0,V.Local.iRowCnt,1)
+	F.Intrinsic.BDF.ReadRow("AUX001", V.Local.iCnt, V.Local.sTemp)
+	F.Intrinsic.String.Split(V.Local.sTemp, "|~|", V.Local.sReadRow)
+	'the job is job/suffix combined
+	V.Local.sJobSuff.Set(V.Local.sReadRow(0).Trim)
+	F.Intrinsic.String.RPad(V.Local.sJobSuff, " ", 9, V.Local.sJobSuff)
+	'the type will indicate whether it's a job, order or PO
+	V.Local.sType.Set(V.Local.sReadRow(1).Trim)
+'	V.Local.sDueDate.Set(V.Local.sReadRow(2).Trim)
+'	V.Local.sCustVend.Set(V.Local.sReadRow(3).Trim)
+'	V.Local.sQuantity.Set(V.Local.sReadRow(4).Trim)
+'	V.Local.sBalance.Set(V.Local.sReadRow(5).Trim)
+	F.Intrinsic.Control.If(V.Local.sType,=,"Job")
+		F.Intrinsic.String.Left(V.Local.sJobSuff,6, V.Local.sJob)
+		F.Intrinsic.String.Right(V.Local.sJobSuff,3, V.Local.sSuffix)
+		F.Intrinsic.String.Build("SELECT JOB FROM WO_USER_FLDS WHERE JOB = '{0}' AND SUFFIX = '{1}'", V.Local.sJob.Trim, V.Local.sSuffix.Trim, V.Local.sSQL)
+		F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+		F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+			F.Intrinsic.String.Concat(V.Local.sReadRow(0),"]=[BC::",V.Color.Yellow,"|~|",V.Local.sReadRow(1),"|~|",V.Local.sReadRow(2),"|~|",V.Local.sReadRow(3),"|~|",V.Local.sReadRow(4),"|~|",V.Local.sReadRow(5),V.Local.sReadRow)
+			   Function.Intrinsic.BDF.WriteRow("Clone",V.local.sReadRow)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sReadRow(0),"|~|",V.Local.sReadRow(1),"|~|",V.Local.sReadRow(2),"|~|",V.Local.sReadRow(3),"|~|",V.Local.sReadRow(4),"|~|",V.Local.sReadRow(5),V.Local.sReadRow)
+			   Function.Intrinsic.BDF.WriteRow("Clone",V.local.sReadRow)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Concat(V.Local.sReadRow(0),"|~|",V.Local.sReadRow(1),"|~|",V.Local.sReadRow(2),"|~|",V.Local.sReadRow(3),"|~|",V.Local.sReadRow(4),"|~|",V.Local.sReadRow(5),V.Local.sReadRow)
+			   Function.Intrinsic.BDF.WriteRow("Clone",V.local.sReadRow)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCnt)
+Function.Intrinsic.Debug.InvokeDebugger
+Function.Intrinsic.Debug.Stop
+F.Intrinsic.BDF.Save("Clone","AUX001")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.WOUserFldCheck.End
+
+Program.Sub.CopyExpFields.Start
+F.Intrinsic.Control.Try
+V.Local.iCnt.Declare(Long)
+V.Local.iCnt2.Declare(Long)
+V.Local.sJob.Declare(String)
+V.Local.sOrderNo.Declare(String)
+V.Local.sOrderLine.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sRet2.Declare(String)
+V.Local.sUserFlds.Declare(String)
+v.Local.sRow.Declare(string)
+V.Local.sSQL.Declare(String)
+V.Local.sSuffix.Declare(String)
+V.Local.sUserData.Declare(String)
+V.Local.sUser1.Declare(String)
+V.Local.sUser2.Declare(String)
+V.Local.sUser3.Declare(String)
+V.Local.sUser4.Declare(String)
+V.Local.sUser5.Declare(String)
+V.Local.sUser6.Declare(String)
+V.Local.sUser7.Declare(String)
+V.Local.sUser8.Declare(String)
+V.Local.sUser9.Declare(String)
+V.Local.sUser10.Declare(String)
+
+
+V.Local.sSQL.Set("SELECT DISTINCT ORDER_NO, ORDER_LINE FROM GCG_6096_EXPUF_DATA")
+F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,<>,"")
+	F.Intrinsic.String.Split(V.Local.sRet,"#$#", V.Local.sRet)
+	F.Intrinsic.Control.For(v.Local.iCnt, V.Local.sRet.LBound, V.Local.sRet.UBound,1)
+		F.Intrinsic.String.Split(V.Local.sRet(V.Local.iCnt),"*!*", V.Local.sRow)
+		V.Local.sOrderNo.Set(V.Local.sRow(0).Trim)
+		F.Intrinsic.String.LPad(V.Local.sOrderNo, "0",7, V.Local.sOrderNo)
+		V.Local.sOrderLine.Set(v.Local.sRow(1).Trim)
+		F.Intrinsic.String.RPad(V.Local.sOrderLine, "0", 4, V.Local.sOrderLine)
+		
+		F.Intrinsic.String.Build("SELECT JOB,SUFFIX FROM ORDER_TO_WO WHERE ORDER_NO = '{0}' AND ORDER_LINE = '{1}'", V.Local.sOrderNo.Trim, v.Local.sOrderLine.Trim,V.Local.sSQL)
+		F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, v.Local.sRet2)
+		F.Intrinsic.Control.If(v.Local.sRet2,<>,"")
+			F.Intrinsic.String.Split(V.Local.sRet2, "*!*", v.Local.sRet2)
+			V.Local.sJob.Set(V.Local.sRet2(0).Trim)
+			V.Local.sSuffix.Set(V.Local.sRet2(1).Trim)
+			
+			f.Intrinsic.String.Build("SELECT UF_DATA FROM GCG_6096_EXPUF_DATA WHERE ORDER_NO = '{0}' AND ORDER_LINE = '{1}' ORDER BY UF_ID", V.Local.sOrderNo.Trim, V.Local.sOrderLine.Trim, V.Local.sSQL)
+			F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL,V.Local.sUserData)
+			F.Intrinsic.Control.If(V.Local.sUserData,<>,"")
+				F.Intrinsic.String.Split(V.Local.sUserData, "#$#", V.Local.sUserData)
+				V.Local.sUser1.Set(V.Local.sUserData(0).Trim)
+				V.Local.sUser2.Set(V.Local.sUserData(1).Trim)
+				V.Local.sUser3.Set(V.Local.sUserData(2).Trim)
+				V.Local.sUser4.Set(V.Local.sUserData(3).Trim)
+				V.Local.sUser5.Set(V.Local.sUserData(4).Trim)
+				V.Local.sUser6.Set(V.Local.sUserData(5).Trim)
+				V.Local.sUser7.Set(V.Local.sUserData(6).Trim)
+				V.Local.sUser8.Set(V.Local.sUserData(7).Trim)
+				V.Local.sUser9.Set(V.Local.sUserData(8).Trim)
+				V.Local.sUser10.Set(V.Local.sUserData(9).Trim)
+			F.Intrinsic.Control.EndIf
+			
+			'check to see if there is a record for the job in the user fields table. If there isn't, insert a row and then update the user fields with the correct data
+			F.Intrinsic.String.Build("SELECT JOB FROM WO_USER_FLDS WHERE JOB = '{0}' AND SUFFIX = '{1}'", V.Local.sJob.Trim, V.Local.sSuffix.Trim, V.Local.sSQL)
+			F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL, V.Local.sUserFlds)
+			F.Intrinsic.Control.If(V.Local.sUserFlds,=,"")
+				'insert a record for the user flds table
+				F.Intrinsic.String.Build("INSERT INTO WO_USER_FLDS (JOB, SUFFIX) VALUES ('{0}', '{1}')", V.Local.sJob.Trim, V.Local.sSuffix.Trim, V.Local.sSQL)
+				F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+			F.Intrinsic.Control.EndIf
+		
+			'update statement for each user field on the work order header
+			F.Intrinsic.String.Build("UPDATE WO_USER_FLDS SET USER_1 = '{0}', USER_2 = '{1}', USER_3 = '{2}', USER_4 = '{3}', USER_5 = '{4}', USER_6 = '{5}', USER_7 = '{6}', USER_8 = '{7}', USER_9 = '{8}', USER_10 = '{9}' WHERE JOB = '{10}' AND SUFFIX = '{11}'", V.Local.sUser1.Trim, v.Local.sUser2.Trim, V.Local.sUser3.Trim, V.Local.sUser4.Trim, V.Local.sUser5.Trim, V.Local.sUser6.Trim, V.Local.sUser7.Trim, V.Local.sUser8.Trim, V.Local.sUser9.Trim, V.Local.sUser10.Trim, V.Local.sJob.Trim, V.Local.sSuffix.Trim, V.Local.sSQL)
+			F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.CopyExpFields.End
+
+Program.Sub.f_Main_Unload.Start
+F.Intrinsic.Control.Try
+
+F.ODBC.Connection!con.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6096", "ProjectTitle", "Flow Down Expanded User Fields", "Callback", "f_Main_Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.f_Main_Unload.End
+
+Program.Sub.ErrorMessage.Start
+'basic error message for replacing catch block
+'this is really just for when printing the message and ending program
+'pass error number, error description, current subroutine
+'optional callback sub, this will be called before ending
+'optional unattended parameters, those subs may not exist if not using them but won't be called
+F.Intrinsic.Control.Try
+
+V.Local.iError.Declare(Long)
+V.Local.sErrorDescription.Declare(String)
+V.Local.sSubroutine.Declare(String)
+V.Local.sError.Declare(String)
+V.Local.bExists.Declare(Boolean)
+V.Local.sCallback.Declare(String)
+
+V.Local.iError.Set(V.Args.ErrorNumber)
+V.Local.sErrorDescription.Set(V.Args.ErrorDescription)
+V.Local.sSubroutine.Set(V.Args.Subroutine)
+
+'make sure we aren't in an error loop
+F.Intrinsic.Control.If(V.Global.bError)
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndIf
+V.Global.bError.Set(True)
+
+F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Caller.ScriptFile, V.Ambient.Newline, V.Local.sSubroutine, V.Local.iError, V.Local.sErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+
+F.Intrinsic.Variable.ArgExists("UNATTENDED", V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	F.Intrinsic.Control.If(V.Args.UNATTENDED)
+		F.Intrinsic.Control.CallSub(UnattendedErrorMessage, "MESSAGE", V.Local.sError, "PROJECT", V.Args.PROJECT, "PROJECTTITLE", V.Args.PROJECTTITLE)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.ArgExists("Callback", V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	V.Local.sCallback.Set(V.Args.Callback.Trim)
+	F.Intrinsic.Control.CallSub(V.Local.sCallback)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Caller.ScriptFile,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+Program.Sub.ErrorMessage.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$acollins$}$20200930162210321$}$h98hERc2yV72q0GaUGlwSaoK/aefTdVkMo60XrNJzOBu7YZdYqN+bPHJ7bDGQt6W+mLkFyKaXf4d3jM58aXuMA==
+Program.Sub.Comments.End
